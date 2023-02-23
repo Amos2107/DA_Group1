@@ -21,6 +21,9 @@ print(visitor_raw_df.head())
 print(visitor_raw_df.columns)
 
 # select Asia country column (include year column), put into new df
+asia_df = visitor_raw_df.iloc[: , [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]].copy()
+
+print(asia_df)
 # filter year
 # groupby year
 # sum
